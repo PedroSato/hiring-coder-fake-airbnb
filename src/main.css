@@ -1,0 +1,180 @@
+body,
+html {
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.navbar-container {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  margin: 0 1rem;
+  padding: 0.2rem 1rem;
+  border-radius: 20px;
+}
+
+.navbar-link:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.navbar-register {
+  margin: 0 1rem;
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.navbar-register:hover {
+  box-shadow: 2px 4px 6px 2px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-logo {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff385c;
+  cursor: pointer;
+}
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  margin-top: 10rem;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.card {
+  transition: 0.3s;
+  width: 20%;
+  min-width: 20%;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.card-img {
+  width: 100%;
+  height: 70%;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-info {
+  padding: 2px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 30%;
+}
+
+.property-price {
+  font-weight: bold;
+}
+
+.pagination-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.pagination span {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 0.3rem;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.page-changer {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.pagination span.active {
+  background-color: black;
+  color: white;
+}
+
+.pagination span:hover:not(.active) {
+  background-color: #ddd;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.filter-input {
+  height: 80%;
+  border: none;
+  margin-top: 0.2rem;
+}
+
+.filter-input:focus {
+  outline-width: 0;
+}
+.filter-label {
+  font-size: 0.8rem;
+}
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.filter-container:hover {
+  border: 2px solid black;
+  padding-top: 0.3rem;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.search-button {
+  border: none;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(229, 30, 64, 1) 0%,
+    rgba(221, 42, 125, 1) 100%
+  );
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 1rem;
+  padding: 0.8rem;
+}

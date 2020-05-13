@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gama - Fake AirBnB</title>
+
+    <script src="./src/main.js"></script><!--import do código Javascript-->
+    <script src="https://kit.fontawesome.com/aefa4e46e6.js" crossorigin="anonymous"></script><!--import do ícone de lupa do botão de filtragem-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    /><!--import da fonte Roboto-->
+    <link rel="stylesheet" href="./src/main.css" /><!--import do código CSS-->
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar-container">
+          <a class="navbar-logo">Airbnb</a>
+          <div class="search-container">
+            <div class="filter-container">
+              <label class="filter-label" for="filter">Localização: </label>
+              <input id="filter" class="filter-input" placeholder="Para onde você vai?"></input> <!--input de filtragem-->
+            </div>
+            <button id='search-button' class="search-button"><i class="fas fa-search"></i> Buscar</button>            
+          </div>
+          <div class="navbar-links">
+            <a class="navbar-link">Hospede em sua acomodação</a>
+            <a class="navbar-link">Hospede uma experiência</a>
+            <a class="navbar-link">Ajuda</a>
+            <a class="navbar-register">Cadastre-se</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="card-wrapper">
+
+      <div class="card-container"></div><!--container onde os cards serão renderizados-->
+    </div>
+    <div class="pagination-wrapper">
+      <div class="pagination"></div><!--container com os botões de paginação-->
+    </div>
+    <div id="map"></div><!--div onde será renderizado o mapa do google maps-->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIvcx5cy5PABB0o2AqygXFbYCLQUmmFeM&callback=initMap"
+    ></script><!--script do google maps-->
+  </body>
+</html>
