@@ -177,7 +177,7 @@ const renderPage = async () => {
     //que filtrará nossos dados 
 
 
-    const paginatedData = paginateData(ITEMS_PER_PAGE, filteredApiData)
+    const paginatedData = paginateData(filteredApiData)
 
 
     renderPaginationMenu(paginatedData);
